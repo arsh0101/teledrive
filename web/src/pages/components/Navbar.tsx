@@ -63,7 +63,6 @@ const Navbar: React.FC<Props> = ({ user }) => {
         <Menu selectable={false} overflowedIndicator={<MenuOutlined />} mode="horizontal" triggerSubMenuAction="click" theme={currentTheme === 'dark' ? 'light' : 'dark'}
           style={{ background: currentTheme === 'dark' ? '#1f1f1f' : '#0088CC', position: 'relative', display: 'flex', justifyContent: 'right' }}>
           <Menu.Item onClick={() => history.push('/dashboard')} key="dashboard">Dashboard</Menu.Item>
-          <Menu.Item onClick={() => window.open('https://github.com/mgilangjanuar/teledrive', '_blank')} key="github" icon={<GithubOutlined />}>GitHub</Menu.Item>
         </Menu>
       </>}
     </Layout.Header>
